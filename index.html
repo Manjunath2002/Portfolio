@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+img {
+    max-height: 50%;
+    max-width: 50%;
+}
+
+section#contact {
+    background-color: #eee;
+    padding: 40px;
+    text-align: center;
+}
+
+section#contact p {
+    margin-bottom: 20px;
+}
+
+section#contact ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section#contact ul li:last-child {
+    margin-right: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>L.Manjunath</h1>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am manjunath from guntur pursuing b-tech 4th year at kits college and i have technical skills in <b>c, python, HTML,CSS,JS,Cloud</b>.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project 1</h3>
+                    <img src="https://pre00.deviantart.net/8385/th/pre/f/2016/124/4/2/marvel_banner_by_blackclaws12-da18ugq.jpg" alt="Project 1">
+                    <p><b>My first project is marvel movie website where you can view all the movies and series of marvel</b></p>
+                </li>
+                <li>
+                    <h3>Project 2</h3>
+                    <img src="https://th.bing.com/th/id/R.ca64cc7db35d6905f6e88ad0e7c6581d?rik=%2b3EKlwze3hWfWg&riu=http%3a%2f%2fcliparts.co%2fcliparts%2fBca%2fA8o%2fBcaA8oEni.png&ehk=j0f8IbUHkSl2vWKKz%2fMz9dplu05%2b6PGp9OBp%2foFaNGE%3d&risl=&pid=ImgRaw&r=0" alt="Project 2">
+                    <p>My second project is  a sign language translator which is used to translate the sign anguage to text/voive and also add few external features like text to speech, speech to text and text to sign language.</p>
+                </li>
+               
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: manjunathlingamallu@gmail.com</p>
+            <p>Social Media:</p>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <script>
+       // Smooth scrolling effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+    </script>
+</body>
+</html>
